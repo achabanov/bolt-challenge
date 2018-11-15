@@ -1,0 +1,39 @@
+<!-- The content below is only a placeholder and can be replaced. -->
+<div style="text-align:center">
+  <img class="logo" src="../assets/boltlogo.svg" alt="logo_img">
+  <h1>Welcome to {{ title }}!</h1>
+  <div style="text-align: center">
+    <div class="start">
+      <div class="table">
+
+        <br>
+        <div class="laoding">
+          <button [disabled]="dispatching" (click)="dispatchAll()">Dispatch</button>
+
+          <img [hidden]="!dispatching" src="../assets/loading.gif" alt="loading...">
+        </div>
+
+
+        <br><br>
+
+        <table>
+          <tr>
+            <th>ShipmentID</th>
+            <th>Status</th>
+            <th>By (DriverID)</th>
+          </tr>
+          <tr *ngFor="let key of processedShipment">
+            <td>{{ key[0] }}</td>
+            <td [ngClass]="{'accepted' : key[2] == 'Accepted', 'notAccepted' : key[2] !== 'Accepted'}"> {{ key[2]
+              }}</td>
+            <td>{{ key[1] }}</td>
+          </tr>
+        </table>
+
+      </div>
+
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>
+</div>

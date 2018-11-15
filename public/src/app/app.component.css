@@ -1,0 +1,51 @@
+h1 {
+    display: inline-block;
+}
+
+.logo {
+    float:left;
+    padding: 25px 0px 0px 25px;
+    
+}
+
+.start {
+    border: 1px solid #efefef;
+    width: 500px;
+    text-align:center;
+    display: inline-block;
+    padding: 40px;
+    text-align: -webkit-center;
+    margin-top: 25px;
+}
+
+button {
+    background-color: #f7ca02;
+    padding: 17px 28px;
+    font-family: maison_neuedemi;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 27px;
+    border: none;
+}
+
+table, th, td {
+    border: 1px solid #efefef;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.accepted {
+    color: green;
+    font-weight: 1000;
+}
+
+.notAccepted {
+    color: #f7ca02;
+    font-weight: 1000;
+}
+
+.laoding > img {
+    width: 30px;
+    vertical-align: middle;
+    padding-left: 15px;
+}
